@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View your searched result</title>
+</head>
+<body style="background-color:Lavender;">
+<div align="center">
+<h3>Student Information</h3>
+<table border=7>
+    <thead>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Email</td>
+    <td>Phone no.</td>
+    <td>Password</td>
+    </thead>
+{% for x in rows %}
+    <tr>
+        <td>{{x["name"]}}</td>
+        <td>{{x["address"]}}</td>
+        <td>{{x["email"]}}</td>
+        <td>{{x["phone"]}}</td>
+        <td>{{x["password"]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+</body>
+</html>

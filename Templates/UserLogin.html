@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+</head>
+<?php
+
+  session_start();
+  $_SESSION['uid'] = $uid;
+
+  echo "The session variable are set up.";
+?>
+<body style="background-color:Lavender;">
+<div align="center">
+<form action="/verify" method="Post">
+    <h1>Enter Login Credentials</h1>
+    <p>User Email-ID</p>
+    <input type="text" name="uid">
+
+    <p>password</p>
+    <input type="password" name="pass">
+    <br>
+    <br>
+    <input type="submit" name="ssubmit">
+    <br><br>
+</form>
+</div>
+</body>
+
+</html>

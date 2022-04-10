@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View your searched result</title>
+</head>
+<body style="background-color:Lavender;">
+<div align="center">
+<h3>Student Information</h3>
+<table border=8>
+    <thead>
+    <td>Description</td>
+    <td>Remark</td>
+    <td>Reporting Date</td>
+    <td>Reported By</td>
+
+    </thead>
+
+{% for x in rows %}
+    <tr>
+        <td>{{x["description"]}}</td>
+        <td>{{x["remark"]}}</td>
+        <td>{{x["Report_Date"]}}</td>
+        <td>{{x["name1"]}}</td>
+
+
+    </tr>
+    {% endfor %}
+
+</table>
+</div>
+</body>
+</html>
